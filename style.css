@@ -9,7 +9,7 @@ body{
 /*Header*/
 header{
     margin: 0px;
-    height: 100px;
+    height: 45px;
     color: black;
     background-color: rgb(217, 217, 217);
     border: none;
@@ -30,11 +30,15 @@ header .nav-links .search-bar-container{
 }
 /*navbar links*/
 .nav-links{
-    height: 60px;
+    height: 30px;
     width: 600px;
     background-color: #D9D9D9;
     display: inline-block;
     margin: 0 5px;
+    display: flex;
+    flex: 1;
+    align-items: end;
+    justify-content: space-between;
 }
 ul {
     list-style-type: none;
@@ -44,13 +48,15 @@ ul {
 li {
     display: inline;
   }
-#Movies, #Tvshows, #Games #Collections{
-    display:flex;
-    flex-direction: row;
+.search-bar-container{
+  
 }
+
 #box-img{
     height: 250px;
     width: 200px;
+    display: inline-block;
+    padding: 10px 15px 30px 15px;
 }
 #image-container {
     width: 80%;
