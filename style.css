@@ -15,9 +15,6 @@ header{
     border: none;
     text-align:  left;
 }
-header .nav-links .search-bar-container{
-
-}
 /*Button*/
 #btn{
     font-size: 17px;
@@ -51,7 +48,10 @@ li {
 .search-bar-container{
   
 }
-
+#Movies, #Tvshows, #Games #Collections{
+    display:flex;
+    flex-direction: row;
+}
 #box-img{
     height: 250px;
     width: 200px;
@@ -60,9 +60,9 @@ li {
 }
 #image-container {
     width: 80%;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent images from wrapping */
-    position: relative; /* Position the scroll buttons relative to this container */
+    overflow-x: auto;
+    white-space: nowrap;
+    position: relative; 
 }
 #imgs{
     height: 225px;
