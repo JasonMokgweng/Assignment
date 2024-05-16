@@ -6,16 +6,17 @@
     <link rel="icon" type="image/jpg" href="Image Resources/Brand-Warnerbros.png">
     <link rel="stylesheet" href="style.css">
     <!-- Link to external CSS file -->
-    <title>Homepage</title>
+    <title>Warner Bros</title>
 </head>
 <body>
     <header>
         <h1><a href=""><WARNER BROS></a></h1>
         <!--Navigation bar for Warner Bros containing the Search button, Logo and Home button-->
             <div class="nav-links">
-                <img alt="logo" src="Image Resources/Brand-Warnerbros.png" height="25" width="25">
+
+                <img alt="logo" src="Image Resources/Brand-Warnerbros.png" height="40" width="40">
                 <ul>
-                <li><a class="link-nav" href="index.html">Home</a><li>
+                <li><a class="btn" href="index.html">Home</a><li>
                 <li><a class="link-nav" href="index.html">WARNER BROS</a></li>
                 </ul>
                 <div class="search-bar-container">
@@ -27,20 +28,54 @@
         </nav>
     </header>
     <main>
-        <!--Main content after Navigation bar-->
-        <p>
-          <strong>
-            Narvik
-          </strong>
-        </p>
-        <p>Navy S.E.A.L. sniper Chris Kyle's pinpoint accuracy saves countless lives on the battlefield and turns him into a legend. Back home with his family after four tours of duty, however, Chris finds that it is the war he can't leave behind...</p>
-        <a href="Movies.html" class="btn btn-white ">Watch</a><br>
+        <!--This is my Carousel-->
+        <div id="myCarousel" class="carousel slide"
+        data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay-image" style="background-image:url(Image\ Resources/Narvik2.jpg);"></div>
+                    <div class="container">
+                        <h2>Narvik</h2>
+                        <p>Navy S.E.A.L. sniper Chris Kyle's pinpoint accuracy saves countless lives on the battlefield and turns
+                             him into a legend. Back home with his family after four tours of duty, however, Chris finds that it
+                              is the war he can't leave behind.</p>
+                        <a href="Movies.html" class="btn btn-lg btn-primary ">Watch</a><br>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image" style="background-image:url(Image\ Resources/DjangoUnchained.png);"></div>
+                    <div class="container">
+                        <h2>Narvik</h2>
+                        <p>Django, an African slave, is freed by a German bounty hunter and becomes his apprentice. Together,
+                             they attempt to rescue his wife, who has been enslaved by a charming but cruel plantation owner.</p>
+                        <a href="Movies.html" class="btn btn-lg btn-primary ">Watch</a><br>
+                    </div>
+                </div>
+            </div>
+            <a href="#myCarousel"
+            class="carousel-control-prev" role="button"data-slide="prev">
+                <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#myCarousel"
+            class="carousel-control-next" role="button"
+            data-slide="next">
+                <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+            </a>
+        </div>
+
         <!--Movie section-->
         <div class="line"></div>
         <a href="Movies.html" class="btn btn-white "><h3>Movies</h3></a>
         <div class="box">
             <div id="box-img">
-                <img id="imgs" src="Image Resources/AmericanSniper.png" alt="AmericanSniper">
+                <img id="imgs" src="Image Resources/AmericanSniper.png" alt="AmericanSniper" style="width:100%">
             </div>
             <div class="box">
                 <div id="box-img">
@@ -50,13 +85,13 @@
         <div class="line"></div>
         <a href="Tv Shows.html" class="btn btn-white "><h3>Tv Shows</h3></a>
         <div class="box">
-            <div id="box-img">
+            <span id="box-img">
                 <img id="imgs" src="Image Resources/Blacklist.png" alt="Black">
-            </div>
+            </span>
             <div class="box">
-                <div id="box-img">
+                <span id="box-img">
                     <img id="imgs" src="Image Resources/PeakyBlinders.png" alt="PeakyBlinders">
-                </div>
+                </span>
         <!--Games section-->
         <div class="line"></div>
         <a href="Games.html" class="btn btn-white "><h3>Games</h3></a>

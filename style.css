@@ -9,34 +9,57 @@ body{
 /*Header*/
 header{
     margin: 0px;
-    height: 45px;
+    height: 44px;
     color: black;
     background-color: rgb(217, 217, 217);
     border: none;
     text-align:  left;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
 }
-/*Button*/
-#btn{
-    font-size: 17px;
-    margin-left:92%;
-    margin-bottom: 99%;
-    border-radius: 4px;
-    padding: 10px;
-    background-color: teal;
-    border: 1px solid grey;
-}
+
 /*navbar links*/
 .nav-links{
     height: 30px;
     width: 600px;
     background-color: #D9D9D9;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0px;
     display: flex;
     flex: 1;
     align-items: end;
     justify-content: space-between;
+    padding-bottom: 0;
+    padding-top: 14px;
 }
+/*carousel style*/
+.carousel-item{
+  height: 400px;
+  background: black;
+  color:whitesmoke;
+  position: relative;
+
+}
+.container{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  padding-bottom: 30px;
+  padding-left: 35px;
+}
+.overlay-image{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5; 
+}
+/*nav-links ul li style*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -45,13 +68,11 @@ ul {
 li {
     display: inline;
   }
+/*search bar container style*/
 .search-bar-container{
   
 }
-#Movies, #Tvshows, #Games #Collections{
-    display:flex;
-    flex-direction: row;
-}
+
 #box-img{
     height: 250px;
     width: 200px;
@@ -97,7 +118,6 @@ footer a>img{
     display: block;
     text-align: center;
     padding: 16px;
-    
     color: white;
     font-size: 20px;
   }
@@ -124,12 +144,7 @@ a:link {
   a:visited {
     color: purple;
   }
-  
-  /* mouse over link */
-  a:hover {
-    color: grey;
-  }
-  
+
   /* selected link */
   a:active {
     color: blue;
