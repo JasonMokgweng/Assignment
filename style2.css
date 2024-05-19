@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #D9D9D9;
+  }
+
+/* Header */
+header {
+    background-color: rgb(217, 217, 217);
+    padding: 10px 0;
+    text-align: left;
+    position: relative;
+  }
+  header h1 a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+  }
+
+/* Navbar links */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-links img {
+    margin-left: 20px;
+  }
+  .nav-links ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links ul li {
+    margin: 0 10px;
+  }
+  .nav-links ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+  }
+  .search-bar-container {
+    display: flex;
+    align-items: center;
+  }
+  .search-bar-container input {
+    padding: 5px;
+    margin-right: 5px;
+  }
+
+/* Carousel */
+.carousel-item {
+    height: 400px;
+    background: black;
+    color: whitesmoke;
+    position: relative;
+  }
+  .container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding-bottom: 30px;
+    padding-left: 35px;
+  }
+  .overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5; 
+  }
+
+/* Box layout for images */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+    display: table;
+    clear: both;
+  }
+  #box-img {
+    margin: 10px;
+    width: calc(50% - 20px);
+  }
+  #imgs {
+    width: 100%;
+    height: auto;
+  }
+  .p {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin: 20px 0;
+    display: table;
+    clear: right;
+  }
+
+  .line {
+    border-bottom: 1px solid black;
+    margin: 20px 0;
+  }
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: rgb(217, 217, 217);
+    text-align: left;
+  }
+  footer section {
+    margin-bottom: 10px;
+  }
+  footer p, footer a {
+    display: block;
+    margin: 5px 0;
+    color: black;
+  }
+  footer a img {
+    border-radius: 50%;
+    height: 24px;
+    margin-right: 5px;
+  }
+  footer a {
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
